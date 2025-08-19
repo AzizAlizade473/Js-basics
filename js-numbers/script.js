@@ -1,3 +1,4 @@
+
 let number= 12.345
 
 document.getElementById("0").innerHTML = "The Target Is: " + number
@@ -45,3 +46,33 @@ document.getElementById("11.2").innerHTML = isNaN("Hello")
 //is SafeInteger
 document.getElementById("12.1").innerHTML = Number.isSafeInteger(10)
 document.getElementById("12.2").innerHTML = Number.isSafeInteger(12345678901234567890)
+
+//Epsilon
+document.getElementById("13.1").innerHTML = Number.EPSILON
+
+//Max Value
+document.getElementById("14.1").innerHTML = Number.MAX_VALUE
+
+//Min Value
+document.getElementById("15.1").innerHTML = Number.MIN_VALUE
+
+//MAx safe integer
+document.getElementById("16.1").innerHTML = Number.MAX_SAFE_INTEGER
+
+//Min safe integer
+document.getElementById("17.1").innerHTML = Number.MIN_SAFE_INTEGER
+
+//+ infinity
+document.getElementById("18.1").innerHTML = Number.POSITIVE_INFINITY
+
+//- infinity
+document.getElementById("19.1").innerHTML = Number.NEGATIVE_INFINITY
+
+//NaN
+document.getElementById("20.1").innerHTML = Number.NaN
+
+//locale string
+document.getElementById("21.1").innerHTML = number.toLocaleString() + "  |  the type: " + (typeof number.toLocaleString());
+
+//ToPrecision
+document.getElementById("22.1").innerHTML = number.toPrecision(3)
