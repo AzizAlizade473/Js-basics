@@ -28,7 +28,6 @@ sidebar.appendChild(link2)
 
 const userDiv = document.getElementById("user");
 
-// -------- Aziz card --------
 const exp = new Map();
 exp.set("Company", "AZAL");
 exp.set("Salary", 2000);
@@ -54,12 +53,12 @@ exp2.forEach((value, key) => {
 });
 
 
-// -------- Aylin card --------
+
 let card2 = document.createElement("h1")
 card2.textContent = "Aylin Guliyeva"
 
 let user2 = document.getElementById("user2")
-user2.appendChild(card2)   // ✅ FIX: append to user2, not user
+user2.appendChild(card2)  
 user2.appendChild(createLine());
 
 const userDiv2 = document.getElementById("user2");
@@ -72,7 +71,7 @@ exp3.set("Duration", 3);
 exp3.forEach((value, key) => {
   const p = document.createElement("p");
   p.innerHTML = `<strong>${key}</strong>: ${value}`;
-  userDiv2.appendChild(p);  // ✅ FIX: append to userDiv2
+  userDiv2.appendChild(p);  
 });
 
 user2.appendChild(createLine());
@@ -85,5 +84,6 @@ exp4.set("Duration", 0.5);
 exp4.forEach((value, key) => {
   const p = document.createElement("p");
   p.innerHTML = `<strong>${key}</strong>: ${value}`;
-  userDiv2.appendChild(p);  // ✅ FIX: append to userDiv2
+  userDiv2.appendChild(p);  
 });
+
