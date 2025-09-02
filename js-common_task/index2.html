@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main2" id="main2">
+        <div class="sidebar" id="sidebar">
+
+        </div>
+
+        <div class="body" id="body">
+
+        </div>
+    </div>
+
+
+    <script>
+        let link1 = document.createElement("a")
+        link1.textContent = "Home"
+        link1.href = "index.html"
+
+        let link2 = document.createElement("a")
+        link2.textContent = "About"
+        link2.href = "index2.html"
+
+        let sidebar = document.getElementById("sidebar")
+        sidebar.appendChild(link1)
+        sidebar.appendChild(link2)
+
+
+        sidebar.style.display = "flex"
+        sidebar.style.flexDirection = "column"
+        sidebar.style.paddingRight = "10rem"
+        sidebar.style.paddingLeft = "2rem"
+        sidebar.style.backgroundColor = "rgba(173, 172, 172, 0.3)"
+        sidebar.style.width = "7rem"
+        sidebar.style.height = "100vh"
+        sidebar.style.boxShadow = "5px 5px 15px rgba(0,0,0,0.3)"
+        sidebar.style.fontSize = "20px"
+        sidebar.style.gap = "10px"
+
+        main2.style.display = "flex"
+        
+
+        
+
+        let body = document.getElementById("body")
+        let text = document.createElement("p")
+        text.textContent = "About page"
+        body.appendChild(text)
+        body.style.marginLeft = "3rem"
+
+    </script>
+</body>
+
+</html>
